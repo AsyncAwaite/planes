@@ -1,0 +1,50 @@
+.header {
+
+  background: url("../img/heroBg.jpg") right top no-repeat;
+  background-size: cover;
+  //background-blend-mode: normal, screen;
+  width: 100vw;
+  height: 100vh;
+
+  color: #fff;
+  position: relative;
+  &__screen {
+    min-height: 100vh;
+    display: grid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    grid-template-rows: auto 1fr auto;
+
+  }
+
+  &__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__promo {
+    margin-top: 26rem;
+
+  }
+  &__title{
+    font-weight: 300;
+    font-size: 4.2rem;
+    line-height: 6.4rem;
+    span {
+      display: block;
+      font-weight: 500;
+      font-size: 6.4rem;
+      line-height: 6.4rem;
+      margin-left: 2.5rem;
+    }
+  }
+  &__title-desc {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    width: 31%;
+    margin-top: 3.1rem;
+  }
+  &__planes {
+    margin-top: auto;
+  }
+}

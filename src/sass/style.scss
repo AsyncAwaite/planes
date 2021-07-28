@@ -1,8 +1,46 @@
 
-@import "fonts/fonts";
+@import "fonts/font";
 
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+html {
+    font-size: 10px;
+}
+body {
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+.page {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.logo {
+    display: inline-block;
+    max-width: 100%;
+    img {
+        object-fit: cover;
+        display: block;
+    }
+}
+
+
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/lang-switcher";
+@import "blocks/planes";
