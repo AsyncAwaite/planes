@@ -1,0 +1,22 @@
+.about {
+  //display: flex;
+  //justify-content: space-between;
+  &__title {
+    color: #09498F;
+    font-size: 6.4rem;
+    line-height: 9.6rem;
+  }
+  &__text {
+    display: flex;
+  }
+  &__text-item {
+    max-width: 384px;
+    &:first-child{
+      margin-right: 2rem;
+    }
+    p {
+      margin-bottom: 3.5rem;
+    }
+  }
+
+}

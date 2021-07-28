@@ -2,7 +2,7 @@
   display: flex;
   list-style: none;
   margin-bottom: 0;
-  margin-top: 15.7rem;
+  margin-top: size(157, 35);
   align-items: center;
   justify-content: space-between;
   padding: 0;
@@ -13,7 +13,7 @@
     }
   }
   &__link{
-    padding: 5rem 12rem;
+    padding: 5rem size(120,30);
     display: inline-block;
     position: relative;
     transition: background-color .4s linear;

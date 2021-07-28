@@ -1,0 +1,11 @@
+$maxWidth: 1600;
+$minWidth: 320;
+
+@function size($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - $minWidth;
+  @return calc(
+          #{$mobSize + px} + #{$addSize} *
+          ((100vw - #{$minWidth + px}) / #{$maxWidth})
+  );
+}
