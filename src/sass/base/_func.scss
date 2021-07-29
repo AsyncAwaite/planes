@@ -1,5 +1,5 @@
 $maxWidth: 1440;
-$minWidth: 768;
+$minWidth: 320;
 
 @function size($pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;

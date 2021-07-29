@@ -1,43 +1,68 @@
 .about {
-  //display: flex;
-  //justify-content: space-between;
   &__title {
     color: #09498F;
-    font-size: size(64, 30);
+    font-size: 6.4rem;
+    height: 100%;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    &-2 {
+      flex-direction: column-reverse;
+      .about__img {
+        padding-bottom: 51%;
+        margin-bottom: auto;
+      }
+      .about__text{
+        margin-bottom: 0;
+      }
+    }
   }
   &__text {
-    display: flex;
+    color: #343434;
+    line-height: 2.4rem;
+    margin-bottom: auto;
   }
-  &__text-item {
-    max-width: 384px;
-    &:first-child{
-      margin-right: 2rem;
-    }
-    p {
-      margin-bottom: 3.5rem;
+  &__img {
+    position: relative;
+    padding-bottom: 66%;
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
     }
   }
+
   &__mission {
+    margin-top: 9.6rem;
     padding: 9rem 6rem;
     position: relative;
-    &:before, &:after {
+    &:before {
       content: '';
       background: linear-gradient(180deg, #2769B1 0%, #09498F 100%);
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 50%;
       height: 100%;
     }
     &:after {
-      background: url("../img/about-plane3.jpg") top  right no-repeat;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background: url("../img/about-plane3.jpg") center  center / cover no-repeat;
     }
   }
   &__mission-text {
-    margin-left: 6rem;
-    max-width: 450px;
-    font-size: size(32, 24);
-    line-height: size(32, 24);
+    font-size: 32px;
+    line-height: 37.5px;
     color: #fff;
     font-family: 'Roboto';
     font-weight: 100;
@@ -46,8 +71,8 @@
     &:before {
       content: '';
       position: absolute;
-      left: -53px;
-      top: -40px;
+      left: -47px;
+      top: -42px;
       background: url('../icons/Group.png') no-repeat;
       width: 100%;
       height: 100%;
@@ -55,11 +80,32 @@
   }
   &__mission-link {
     display: inline-block;
+    position: relative;
     font-size: 18px;
     font-weight: 500;
     font-family: 'Roboto';
+    line-height: 20px;
     color: #fff;
-    z-index: 5;
+    padding-right: 27px;
+
+    &::after {
+      content: url('../icons/arrow.svg');
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: 0;
+      transition: all .3s linear;
+
+    }
+
+
+    &:hover {
+      &::after {
+        transform: translateX(10px);
+      }
+    }
+
+
 
   }
 

@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   list-style: none;
+  position: relative;
   margin: 0;
   &__item {
     &:first-child {
@@ -16,7 +17,6 @@
     transition: all .3s linear;
 
     &:hover {
-      transform: translateY(1px);
       transform: scale(1.1);
     }
     &-active {

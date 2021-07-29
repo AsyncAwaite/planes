@@ -14,7 +14,15 @@ body {
     font-weight: normal;
     font-size: 1.6rem;
     line-height: 2.4rem;
+    //background: linear-gradient(180deg, #2769B1 0%, #09498F 100%);
 
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
 }
 a {
     color: #fff;
@@ -28,12 +36,14 @@ a {
     display: grid;
     min-height: 100vh;
     width: 100vw;
-    grid-template-rows: auto 1fr auto;
+    position: relative;
+    grid-template-rows: 80px 1fr auto;
 }
 
 .logo {
     display: inline-block;
     max-width: 100%;
+    position: relative;
     img {
         object-fit: cover;
         display: block;
@@ -46,7 +56,47 @@ a {
 @import "blocks/header";
 @import "blocks/menu";
 @import "blocks/lang-switcher";
+@import "blocks/burg";
+@import "blocks/promo";
 @import "blocks/planes";
 @import "blocks/section";
 @import "blocks/about";
-@import "blocks/text-item";
+//@import "blocks/text-item";
+@media (max-width: 991px) {
+    .header {
+        &__menu {
+
+            margin-left: 5%;
+        }
+    }
+
+    .menu {
+        &__item {
+            margin: 0 1rem;
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .header{
+        &__menu{
+            margin-left: 0;
+            display: none;
+            position: absolute;
+            top: 85px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100vh;
+            background: #2769B1;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .burger {
+        display: flex;
+        margin-left: auto;
+    }
+}

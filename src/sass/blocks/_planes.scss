@@ -1,27 +1,16 @@
 .planes {
   display: flex;
   list-style: none;
-  margin-bottom: 0;
-  margin-top: size(157, 35);
   align-items: center;
   justify-content: space-between;
   padding: 0;
-  &__item {
-    margin-left: 2.3rem;
-    &:first-child {
-      margin-left: 0;
-    }
-  }
   &__link{
     padding: 5rem 0;
-    display: inline-flex;
-    justify-content: center;
-
+    display: flex;
     position: relative;
+    justify-content: center;
     transition: background-color .4s linear;
-    width: size(280, 140);
-
-    &:before {
+    &::before{
       content: '';
       position: absolute;
       top: 0;
@@ -33,5 +22,7 @@
     &:hover {
       background-color: rgba(#fff, 0.3);
     }
+
+
   }
 }
