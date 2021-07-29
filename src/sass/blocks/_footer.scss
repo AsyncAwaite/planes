@@ -1,0 +1,28 @@
+.footer {
+  background: linear-gradient(180deg, #2769B1 0%, #09498F 100%);
+  padding-top: 17px;
+  padding-bottom: 50px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #fff;
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  &__nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    li{
+      margin-bottom: 2rem;
+    }
+  }
+  &__title, &__contact-item {
+    margin-bottom: 2rem;
+
+
+
+  }
+}

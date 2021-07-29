@@ -1,0 +1,29 @@
+.services {
+  &__title {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    color: #09498F;
+    margin-bottom: 34px;
+  }
+  &__nav{
+    margin-bottom: 64px;
+  }
+  &__img{
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.nav-pills .nav-link {
+  padding: 1rem 2rem;
+  font-size: 20px;
+  line-height: 30px;
+  color: #0C4C93;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background: linear-gradient(180deg, #2769B1 0%, #09498F 100%);
+  border-radius: 8px;
+  color: #fff;
+}
+

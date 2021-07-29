@@ -14,10 +14,11 @@ body {
     font-weight: normal;
     font-size: 1.6rem;
     line-height: 2.4rem;
-    //background: linear-gradient(180deg, #2769B1 0%, #09498F 100%);
+
 
 }
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
     margin: 0;
 }
 ul {
@@ -37,7 +38,7 @@ a {
     min-height: 100vh;
     width: 100vw;
     position: relative;
-    grid-template-rows: 80px 1fr auto;
+    grid-template-rows: auto 1fr auto;
 }
 
 .logo {
@@ -47,8 +48,10 @@ a {
     img {
         object-fit: cover;
         display: block;
+        height: 100%;
     }
 }
+
 
 
 
@@ -61,7 +64,12 @@ a {
 @import "blocks/planes";
 @import "blocks/section";
 @import "blocks/about";
-//@import "blocks/text-item";
+@import "blocks/services";
+@import "blocks/buttons";
+@import "blocks/content-services";
+@import "blocks/partners";
+@import "blocks/footer";
+
 @media (max-width: 991px) {
     .header {
         &__menu {

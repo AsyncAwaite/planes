@@ -4,12 +4,16 @@
   position: relative;
   &__promo {
     background: linear-gradient(180deg, #2769B1 0%, #09498F 100%);
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     padding-top: 8rem;
     padding-bottom: 0;
   }
-  &__about {
-    padding-bottom: 6.8rem;
+  &__services {
+    padding-top: 33px;
+    padding-bottom: 98px;
+  }
+  &__partners {
+    padding: 0;
   }
 }
