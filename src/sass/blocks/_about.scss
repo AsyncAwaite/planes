@@ -61,13 +61,13 @@
     }
   }
   &__mission-text {
-    font-size: 32px;
-    line-height: 37.5px;
+    font-size: 3.2rem;
+    line-height: 3.75rem;
     color: #fff;
     font-family: 'Roboto';
     font-weight: 100;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
     &:before {
       content: '';
       position: absolute;
@@ -81,18 +81,18 @@
   &__mission-link {
     display: inline-block;
     position: relative;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
     font-family: 'Roboto';
-    line-height: 20px;
+    line-height: 2rem;
     color: #fff;
-    padding-right: 27px;
+    padding-right: 2.7rem;
 
     &::after {
       content: url('../icons/arrow.svg');
       position: absolute;
-      width: 20px;
-      height: 20px;
+      width: 2rem;
+      height: 2rem;
       right: 0;
       transition: all .3s linear;
 

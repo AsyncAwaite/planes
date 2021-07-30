@@ -1,11 +1,13 @@
 .menu {
   display: flex;
   align-items: center;
-  list-style: none;
+  text-align: center;
+
   margin: 0;
   padding: 0;
   &__item {
     margin: 0 1.75rem;
+    list-style: none;
   }
   &__link {
     display: inline-block;

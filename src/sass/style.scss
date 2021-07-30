@@ -34,17 +34,23 @@ a {
     }
 }
 .page {
-    display: grid;
+    display: flex;
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
-    grid-template-rows: auto 1fr auto;
+    flex-direction: column;
+
+}
+
+main {
+    flex: 1 1 auto;
 }
 
 .logo {
     display: inline-block;
     max-width: 100%;
     position: relative;
+    height: 80px;
     img {
         object-fit: cover;
         display: block;
@@ -69,42 +75,5 @@ a {
 @import "blocks/content-services";
 @import "blocks/partners";
 @import "blocks/footer";
+@import "blocks/media";
 
-@media (max-width: 991px) {
-    .header {
-        &__menu {
-
-            margin-left: 5%;
-        }
-    }
-
-    .menu {
-        &__item {
-            margin: 0 1rem;
-        }
-
-    }
-}
-
-@media (max-width: 768px) {
-    .header{
-        &__menu{
-            margin-left: 0;
-            display: none;
-            position: absolute;
-            top: 85px;
-            left: 0;
-            right: 0;
-            width: 100%;
-            height: 100vh;
-            background: #2769B1;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-    .burger {
-        display: flex;
-        margin-left: auto;
-    }
-}
