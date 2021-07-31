@@ -2,6 +2,7 @@
   &__title {
     color: #09498F;
     font-size: 6.4rem;
+    font-weight: 400;
     height: 100%;
   }
   &__item {
@@ -76,6 +77,9 @@
       background: url('../icons/Group.png') no-repeat;
       width: 100%;
       height: 100%;
+    }
+    span{
+      font-family: 'Poppins', sans-serif;
     }
   }
   &__mission-link {

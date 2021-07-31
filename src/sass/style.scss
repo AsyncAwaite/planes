@@ -1,6 +1,5 @@
 @import "base/func";
 @import "fonts/font";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -14,14 +13,17 @@ body {
     font-weight: normal;
     font-size: 1.6rem;
     line-height: 2.4rem;
+    
 
-
+}
+.active {
+    overflow: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     margin: 0;
 }
-ul {
+ul, p {
     margin: 0;
     padding: 0;
 }

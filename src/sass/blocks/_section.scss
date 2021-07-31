@@ -3,7 +3,8 @@
   &__promo {
     background: linear-gradient(180deg, #2769B1 0%, #09498F 100%);
     width: 100%;
-    height: calc(100vh - 9rem);
+    height: 100vh;
+    padding-top: 9rem;
     padding-bottom: 0.4rem;
   }
   &__about {

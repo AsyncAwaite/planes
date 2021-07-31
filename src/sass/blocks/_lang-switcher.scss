@@ -4,6 +4,7 @@
   list-style: none;
   position: relative;
   margin: 0;
+  font-weight: 500;
   &__item {
     &:first-child {
       margin-right: 5px;
@@ -21,6 +22,7 @@
     }
     &-active {
       color: rgba(#fff, 0.46);
+      font-weight: 400;
       &:hover {
         transform: none;
         cursor: default;
