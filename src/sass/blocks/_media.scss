@@ -32,6 +32,7 @@
     &__title {
       font-size: 5rem;
     }
+
   }
 
   .services {
@@ -72,10 +73,22 @@
     }
 
   }
+  .about {
+    &__mission {
+      &:after {
+        content: none;
+      }
+      &::before {
+        width: 100%;
+      }
+    }
+  }
   .planes {
     &__link {
-      padding-top: 2.8rem;
-      padding-bottom: 2.8rem;
+      padding: 2rem 0;
+      img {
+        height: 6rem;
+      }
     }
   }
   .services {
@@ -181,15 +194,50 @@
     margin-left: auto;
   }
   .promo {
-    &__header {
-      margin-top: 14rem;
+    &::before {
+      width: 55%;
+      left: 50%;
+      top: 65%;
+      transform: translate(-50%, -50%);
+      background-size: contain;
     }
-
+    &__main {
+      align-items: baseline;
+    }
     &__title-desc {
-      margin-top: 1.8rem;
+      margin-top: 0.5rem;
 
     }
+    &__bg-plane {
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      top: 62%;
 
+    }
+    &__title {
+      font-size: 3.2rem;
+      span {
+        font-size: 5.4rem;
+      }
+    }
+    &__desc {
+      margin-top: 1.5rem;
+    }
+
+
+
+  }
+  .planes {
+    &__link {
+      font-size: 2rem;
+      span {
+        font-size: 2rem;
+      }
+      img {
+        display: none;
+      }
+    }
   }
   .section {
     &__partners {
@@ -197,8 +245,25 @@
     }
   }
   .about {
+    &__item {
+      &-2 {
+        flex-direction: column;
+        .about__img {
+          margin-bottom: 0;
+        }
+        .about__text {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+    &__text {
+      margin-bottom: 2rem;
+    }
+    &__img {
+      margin-bottom: 2rem;
+    }
     &__mission {
-      margin-top: 2rem;
+      margin-top: 0;
       padding: 8.6rem 0 4.4rem 0;
       &:after {
         content: none;
@@ -208,6 +273,10 @@
       }
     }
     &__mission-text {
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+      margin-bottom: 2.2rem;
+      padding-right: 0;
       &::before {
         left: 0;
       }
@@ -232,6 +301,8 @@
 
 
 }
+
+
 @media (max-width: 576px) {
   .header {
     height: 5rem;
@@ -255,18 +326,17 @@
   }
   .promo {
     &::before {
-      width: 65%;
-      left: 50%;
+      width: 60%;
       top: 53%;
-      transform: translate(-50%, -50%);
-      background-size: contain;
     }
+    &__bg-plane {
+      top: 50%;
+    }
+
     &__wrapper {
       min-height: calc(100vh - 12.6rem)
     }
-    &__main {
-      align-items: baseline;
-    }
+
     &__title {
       font-size: 2.6rem;
       span {
@@ -279,17 +349,14 @@
     }
 
   }
-  .promo {
-    &__bg-plane {
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 80%;
 
-    }
-  }
   .planes {
     &__link {
+
       padding: 1.8rem 0;
+      span {
+        font-size: 1.6rem;
+      }
     }
 
   }
@@ -318,30 +385,12 @@
       margin-left: -7.5px;
       margin-right: -7.5px;
     }
-    &__item {
-      &-2 {
-        flex-direction: column;
-        .about__text{
-          margin-bottom: 2rem;
-        }
-        .about__img {
-          margin-bottom: 0;
-        }
-      }
-    }
+
     &__mission {
       margin-top: 0;
     }
 
-    &__mission-text {
-      font-size: 2.4rem;
-      line-height: 3.6rem;
-      margin-bottom: 2.2rem;
-      padding-right: 0;
-      &::before {
-        left: 0;
-      }
-    }
+
   }
   .services {
     &__title {
@@ -494,41 +543,41 @@
 
 }
 
-@media screen and (min-width:480px) and (max-width:765px) {
-  .menu {
-    &__item {
-      margin-bottom: 1rem;
-    }
-  }
-  .lang-switcher {
-    margin-top: 0;
-  }
-  .section__promo {
-    padding-top: 5rem;
-    padding-bottom: 1rem;
-  }
-  .promo {
-    &__title {
-      margin-top: 2rem;
-      font-size: 3.2rem;
-      span {
-        font-size: 4rem;
-      }
-
-
-    }
-    &__wrapper {
-      min-height: calc(100vh - 6rem);
-    }
-  }
-  .planes__link {
-    padding: 0.8rem 0;
-  }
-  .promo::before {
-    content: none;
-  }
-  .promo__bg-plane{
-    display: none;
-  }
-
-}
+//@media screen and (min-width:480px) and (max-width:765px) {
+//  .menu {
+//    &__item {
+//      margin-bottom: 1rem;
+//    }
+//  }
+//  .lang-switcher {
+//    margin-top: 0;
+//  }
+//  .section__promo {
+//    padding-top: 5rem;
+//    padding-bottom: 1rem;
+//  }
+//  .promo {
+//    &__title {
+//      margin-top: 2rem;
+//      font-size: 3.2rem;
+//      span {
+//        font-size: 4rem;
+//      }
+//
+//
+//    }
+//    &__wrapper {
+//      min-height: calc(100vh - 6rem);
+//    }
+//  }
+//  .planes__link {
+//    padding: 0.8rem 0;
+//  }
+//  .promo::before {
+//    content: none;
+//  }
+//  .promo__bg-plane{
+//    display: none;
+//  }
+//
+//}
