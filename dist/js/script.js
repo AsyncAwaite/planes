@@ -25,9 +25,9 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
     burger.addEventListener('click', (e) => {
-        body.classList.toggle('active');
         burger.classList.toggle('burger-opened');
         header.classList.toggle('active');
+        body.classList.toggle('active');
       
     });
 });

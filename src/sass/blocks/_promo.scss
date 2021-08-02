@@ -1,6 +1,8 @@
 .promo {
   position: relative;
-  &::before, &::after {
+  overflow: hidden;
+
+  &::before{
     content: '';
     width: 50%;
     height: 100vh;
@@ -14,10 +16,17 @@
     background: url("../img/cloud-bg.png") center center / 80% auto no-repeat;
     z-index: 5;
   }
-  &::after {
 
-    background: url("../img/plane-bg.png") center center / contain no-repeat;
-    z-index: 10;
+  &__bg {
+    &-plane {
+      position: absolute;
+      width: 60%;
+      height: 60% ;
+      top: 50%;
+      transform: translateY(-50%);
+      background: url("../img/plane-bg.png") center center / contain no-repeat;
+      z-index: 10;
+    }
   }
   &__ellipse-bg {
     width: 60%;
@@ -29,16 +38,23 @@
     top: 20%;
     right: 10%;
   }
-  &__wraper {
-    height: 100%;
+  &__wrapper {
+    min-height: calc(100vh - 9.5rem);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
+  &__main {
+    flex: 1 1 auto;
+    align-items: center;
+  }
+  &__desc {
+    color: #fff;
+  }
 
   &__header {
     margin-top: 26rem;
-    color: #fff;
+
 
   }
   &__title{

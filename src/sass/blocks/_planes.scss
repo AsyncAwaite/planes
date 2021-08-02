@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0;
+  z-index: 20;
+  position: relative;
   &__link{
     padding: 4.8rem 0;
     font-weight: 700;

@@ -12,10 +12,10 @@
       flex-direction: column-reverse;
       .about__img {
         padding-bottom: 51%;
-        margin-bottom: auto;
+        margin-bottom: 2rem;
       }
       .about__text{
-        margin-bottom: 0;
+        margin-bottom: auto;
       }
     }
   }
@@ -68,6 +68,7 @@
     font-family: 'Roboto';
     font-weight: 100;
     position: relative;
+    padding-right: 2rem;
     margin-bottom: 5rem;
     &:before {
       content: '';

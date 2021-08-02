@@ -6,27 +6,43 @@
   margin: 0;
   font-weight: 500;
   &__item {
+
     &:first-child {
       margin-right: 5px;
     }
+
   }
   &__link {
+    position: relative;
     display: inline-block;
     font-size: 1.5rem;
     line-height: 2.2rem;
-    display: inline-block;
     transition: all .3s linear;
-
-    &:hover {
-      transform: scale(1.1);
+    &:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      transition: width .4s linear;
+      background-color: #fff;
     }
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+
     &-active {
       color: rgba(#fff, 0.46);
       font-weight: 400;
       &:hover {
-        transform: none;
         cursor: default;
         color: rgba(#fff, 0.46);
+        &::after {
+          content: none;
+        }
       }
     }
   }
