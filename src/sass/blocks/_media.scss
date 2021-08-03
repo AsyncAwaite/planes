@@ -21,6 +21,15 @@
     &__header {
       margin-top: 10rem;
     }
+    &__title {
+      span {
+        font-size: 5.4rem;
+      }
+
+    }
+    &__title-desc {
+      padding-right: 15%;
+    }
   }
   .planes {
     &__link {
@@ -64,12 +73,17 @@
   }
   .promo {
     &__title {
+      span {
+        font-size: 3.9rem;
+      }
+
 
     }
 
 
     &__title-desc {
       margin-top: 1.8rem;
+      padding-right: 0;
     }
 
   }

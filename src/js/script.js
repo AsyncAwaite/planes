@@ -1,7 +1,10 @@
+
 window.addEventListener('DOMContentLoaded', function() {
+
+
     const burger = document.querySelector('.burger');
-    const menu = document.querySelector('.header__menu')
-    const header = document.querySelector('.header')
+    const menu = document.querySelector('.header__menu');
+    const header = document.querySelector('.header');
     const promo = document.querySelector('.promo');
     const body  = document.body;
     const promoHeight = promo.scrollHeight;
